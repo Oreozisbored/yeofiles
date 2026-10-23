@@ -1,12 +1,22 @@
-# Wake Words Directory
+# Wake Words Directory 🎙️
 
-By default, Yeo uses built-in openWakeWord models (such as `"hey_jarvis"` or `"alexa"`).
+By default, Yeo can use built-in openWakeWord models (such as `"hey_jarvis"` or `"alexa"`) or custom-trained wake word models.
 
-### Custom Wake Word Models:
-If you train a custom wake word model with openWakeWord (e.g. `hey_yeo`):
-1. Place the trained `.onnx` file here (e.g. `wakewords/hey_yeo.onnx`).
-2. In your `.env` file, set:
-   ```env
-   WAKE_WORD=wakewords/hey_yeo.onnx
-   ```
-3. Restart the bot. Yeo will now trigger on your custom wake word!
+### 📦 Pre-trained Custom Models in this Repository:
+1. **Hey Yeo** (`wakewords/Hey_yee_o.onnx`)
+   - Custom wake word trained specifically for the Yeo Discord Bot!
+   - Pronunciation target: *"Hey Yee-o"*
+2. **Hey Verity** (`wakewords/Hey_verity.onnx`)
+   - Custom wake word for the Verity voice assistant!
+   - Pronunciation target: *"Hey Verity"*
+
+### ⚙️ Usage in `.env` or Google Colab:
+Set your `WAKE_WORD` configuration to the model path:
+```env
+WAKE_WORD=wakewords/Hey_yee_o.onnx
+```
+or:
+```env
+WAKE_WORD=wakewords/Hey_verity.onnx
+```
+*(Note: Keep the companion `.onnx.data` file in the same directory as the `.onnx` model).*

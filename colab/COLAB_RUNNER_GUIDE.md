@@ -103,7 +103,10 @@ Click the badge below to open the notebook directly in Colab:
    - `DISCORD_TOKEN`: Paste your bot token from the Discord Developer Portal.
    - `BOT_OWNER_ID`: Paste your Discord User ID (gives you bot admin permissions).
    - `BOT_NAME`: Name the bot (default: `Yeo`).
-   - `WAKE_WORD`: Select or type your wake word (default: `hey_jarvis`).
+   - `WAKE_WORD`: Select your preferred wake word:
+     - `wakewords/Hey_yee_o.onnx` (Default: Custom-trained **Hey Yeo** model)
+     - `wakewords/Hey_verity.onnx` (Custom-trained **Hey Verity** model)
+     - `hey_jarvis`, `alexa`, `weather`, `timer` (Standard built-in models)
 2. Click the **Run** button (or press `Shift + Enter`) on **Cell 1**.
 3. **What Cell 1 does:**
    - Installs system multimedia packages (`ffmpeg`, `libopus0`, `libopus-dev`).
@@ -137,7 +140,8 @@ Once the bot logs in, join any voice channel in your Discord server:
 ### Voice Interaction
 1. Type `/join` in any text channel. The bot will join your voice channel.
 2. Say the wake word:
-   > *"Hey Jarvis, what's the distance between the Earth and the Moon?"*
+   > *"Hey Yeo, what's the distance between the Earth and the Moon?"*
+   *(or "Hey Verity..." / "Hey Jarvis...")*
 3. The bot will play a quick persona chime (acknowledgement) and immediately answer your query via neural text-to-speech.
 4. You can continue speaking to the bot naturally.
 
